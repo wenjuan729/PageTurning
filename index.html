@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+	</head>
+	<body>
+		<!--<a href="#" class="prevPage"></a>-->
+		<!--<span class="prevpage"></span>-->
+		<div class="page"></div>
+		<script src="jquery.js" ></script>
+		<script src="index.js" ></script>
+		<script type="text/javascript">
+			$('.page').createPage({
+				pageCount:15,
+				current:6,
+				backFn:function (p) {
+					console.log(p)
+				}
+			})
+		</script>
+	</body>
+</html>
